@@ -1,0 +1,261 @@
+{
+  "module": "caen_libs.caenhvwrapper",
+  "functions": [
+    {
+      "name": "Device_get_bd_param",
+      "signature": "(slot_list: collections.abc.Sequence[int], name: str)",
+      "param_order": [
+        "slot_list",
+        "name"
+      ],
+      "param_kinds": {
+        "slot_list": "POSITIONAL_OR_KEYWORD",
+        "name": "POSITIONAL_OR_KEYWORD"
+      },
+      "resource_template": null,
+      "dispatch": null,
+      "dispatch_target": "get_bd_param"
+    },
+    {
+      "name": "Device_get_bd_param_info",
+      "signature": "(slot: int)",
+      "param_order": [
+        "slot"
+      ],
+      "param_kinds": {
+        "slot": "POSITIONAL_OR_KEYWORD"
+      },
+      "resource_template": null,
+      "dispatch": null,
+      "dispatch_target": "get_bd_param_info"
+    },
+    {
+      "name": "Device_get_bd_param_prop",
+      "signature": "(slot: int, name: str)",
+      "param_order": [
+        "slot",
+        "name"
+      ],
+      "param_kinds": {
+        "slot": "POSITIONAL_OR_KEYWORD",
+        "name": "POSITIONAL_OR_KEYWORD"
+      },
+      "resource_template": null,
+      "dispatch": null,
+      "dispatch_target": "get_bd_param_prop"
+    },
+    {
+      "name": "Device_get_ch_name",
+      "signature": "(slot: int, channel_list: collections.abc.Sequence[int])",
+      "param_order": [
+        "slot",
+        "channel_list"
+      ],
+      "param_kinds": {
+        "slot": "POSITIONAL_OR_KEYWORD",
+        "channel_list": "POSITIONAL_OR_KEYWORD"
+      },
+      "resource_template": null,
+      "dispatch": null,
+      "dispatch_target": "get_ch_name"
+    },
+    {
+      "name": "Device_get_ch_param",
+      "signature": "(slot: int, channel_list: collections.abc.Sequence[int], name: str)",
+      "param_order": [
+        "slot",
+        "channel_list",
+        "name"
+      ],
+      "param_kinds": {
+        "slot": "POSITIONAL_OR_KEYWORD",
+        "channel_list": "POSITIONAL_OR_KEYWORD",
+        "name": "POSITIONAL_OR_KEYWORD"
+      },
+      "resource_template": null,
+      "dispatch": null,
+      "dispatch_target": "get_ch_param"
+    },
+    {
+      "name": "Device_get_ch_param_info",
+      "signature": "(slot: int, channel: int)",
+      "param_order": [
+        "slot",
+        "channel"
+      ],
+      "param_kinds": {
+        "slot": "POSITIONAL_OR_KEYWORD",
+        "channel": "POSITIONAL_OR_KEYWORD"
+      },
+      "resource_template": null,
+      "dispatch": null,
+      "dispatch_target": "get_ch_param_info"
+    },
+    {
+      "name": "Device_get_ch_param_prop",
+      "signature": "(slot: int, channel: int, name: str)",
+      "param_order": [
+        "slot",
+        "channel",
+        "name"
+      ],
+      "param_kinds": {
+        "slot": "POSITIONAL_OR_KEYWORD",
+        "channel": "POSITIONAL_OR_KEYWORD",
+        "name": "POSITIONAL_OR_KEYWORD"
+      },
+      "resource_template": null,
+      "dispatch": null,
+      "dispatch_target": "get_ch_param_prop"
+    },
+    {
+      "name": "Device_get_crate_map",
+      "signature": "()",
+      "param_order": [],
+      "param_kinds": {},
+      "resource_template": null,
+      "dispatch": null,
+      "dispatch_target": "get_crate_map"
+    },
+    {
+      "name": "Device_get_event_data",
+      "signature": "()",
+      "param_order": [],
+      "param_kinds": {},
+      "resource_template": null,
+      "dispatch": null,
+      "dispatch_target": "get_event_data"
+    },
+    {
+      "name": "Device_get_events_tcp_ports",
+      "signature": "() -> tuple[int, int]",
+      "param_order": [],
+      "param_kinds": {},
+      "resource_template": null,
+      "dispatch": null,
+      "dispatch_target": "get_events_tcp_ports"
+    },
+    {
+      "name": "Device_get_exec_comm_list",
+      "signature": "()",
+      "param_order": [],
+      "param_kinds": {},
+      "resource_template": null,
+      "dispatch": null,
+      "dispatch_target": "get_exec_comm_list"
+    },
+    {
+      "name": "Device_get_sys_prop",
+      "signature": "(name: str)",
+      "param_order": [
+        "name"
+      ],
+      "param_kinds": {
+        "name": "POSITIONAL_OR_KEYWORD"
+      },
+      "resource_template": null,
+      "dispatch": null,
+      "dispatch_target": "get_sys_prop"
+    },
+    {
+      "name": "Device_get_sys_prop_info",
+      "signature": "(name: str)",
+      "param_order": [
+        "name"
+      ],
+      "param_kinds": {
+        "name": "POSITIONAL_OR_KEYWORD"
+      },
+      "resource_template": null,
+      "dispatch": null,
+      "dispatch_target": "get_sys_prop_info"
+    },
+    {
+      "name": "Device_get_sys_prop_list",
+      "signature": "()",
+      "param_order": [],
+      "param_kinds": {},
+      "resource_template": null,
+      "dispatch": null,
+      "dispatch_target": "get_sys_prop_list"
+    },
+    {
+      "name": "Device_set_ch_name",
+      "signature": "(slot: int, channel_list: collections.abc.Sequence[int], name: str)",
+      "param_order": [
+        "slot",
+        "channel_list",
+        "name"
+      ],
+      "param_kinds": {
+        "slot": "POSITIONAL_OR_KEYWORD",
+        "channel_list": "POSITIONAL_OR_KEYWORD",
+        "name": "POSITIONAL_OR_KEYWORD"
+      },
+      "resource_template": "slot:{slot}:ch:{channel_list[]}",
+      "dispatch": null,
+      "dispatch_target": "set_ch_name"
+    },
+    {
+      "name": "Device_set_ch_param",
+      "signature": "(slot: int, channel_list: collections.abc.Sequence[int], name: str, value: str | float | int | None)",
+      "param_order": [
+        "slot",
+        "channel_list",
+        "name",
+        "value"
+      ],
+      "param_kinds": {
+        "slot": "POSITIONAL_OR_KEYWORD",
+        "channel_list": "POSITIONAL_OR_KEYWORD",
+        "name": "POSITIONAL_OR_KEYWORD",
+        "value": "POSITIONAL_OR_KEYWORD"
+      },
+      "resource_template": "slot:{slot}:ch:{channel_list[]}",
+      "dispatch": null,
+      "dispatch_target": "set_ch_param"
+    },
+    {
+      "name": "Device_test_bd_presence",
+      "signature": "(slot: int)",
+      "param_order": [
+        "slot"
+      ],
+      "param_kinds": {
+        "slot": "POSITIONAL_OR_KEYWORD"
+      },
+      "resource_template": null,
+      "dispatch": null,
+      "dispatch_target": "test_bd_presence"
+    },
+    {
+      "name": "Error_Code",
+      "signature": "(*values)",
+      "param_order": [
+        "values"
+      ],
+      "param_kinds": {
+        "values": "VAR_POSITIONAL"
+      },
+      "resource_template": null,
+      "dispatch": "default",
+      "dispatch_target": null
+    }
+  ],
+  "default_dispatch": "singleton",
+  "captured_types": {
+    "Device": {
+      "type": "Class"
+    },
+    "Error": {
+      "type": "Class"
+    },
+    "Sequence": {
+      "type": "Class"
+    }
+  },
+  "extra_imports": [
+    "collections.abc"
+  ],
+  "custom_client_code": null
+}
